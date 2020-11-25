@@ -42,7 +42,7 @@ export default class App extends Component {
 
       let movies = this.state.dataSource.map((val, key) => {
         return <View key={key} style={styles.item}>
-                <Text>{val.title}</Text>
+                <Text>{val.title}, {val.releaseYear}</Text>
                 </View>
       });
 
